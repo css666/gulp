@@ -1,0 +1,623 @@
+
+/*顶部区域样式开始*/
+.top{
+	width: 100%;
+	height: 57px;
+	background-color: #466080;
+}
+.top_logo{
+	width:180px;
+	height:57px;
+	position: relative;
+	display: inline-block;
+	
+}
+
+.top_menu{
+	width: 800px;
+	height: 57px;
+	display: inline-block;
+}
+.top_menu > a{
+	display: inline-block;
+	line-height: 57px;
+	font-size: 14px;
+	margin-left: 30px;
+	color: #b2bbc6;
+	position: relative;
+}
+.top_menu > a:hover{
+	color: #fff;
+}
+.top_menu .topBtnActive{
+	color: #fff;
+}
+.topBtnActive:before{
+	content: "\25e4";
+	width: 100%;
+	height:3px;
+	background: #fff;
+	position: absolute;
+	bottom: -1px;
+}
+
+/*顶部区域样式结束*/
+/*顶部区域样式结束*/
+/*用户信息样式开始*/
+.use{
+	/*width: 1366px;*/
+	width: 100%;
+	background: #edf0f5;
+	height: 25px;
+	
+	
+	
+}
+
+
+/*公式编辑器页面下div被选中的状态*/
+#modelNameBox .model_div_on{
+	background-color:#466080;
+    color:white;
+}
+#model_label_box .model_div_on{
+	background-color:#466080;
+    color:white;
+}
+.editOn{
+    background-color:#71859d;
+    color:#fff;
+}
+.background-gray{
+    background: #f8f9fb;
+}
+.main .model_div_on{
+     background-color:#71859d;
+     color:#fff;
+}
+.main .model_div_on_sanjiao{
+    background-color:#71859d;
+     color:#fff;
+}
+.calculator .model_div_on:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 10px solid white;
+    border-bottom: 8px solid transparent;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+.top .user_text {
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.user_text{
+	width: 160px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 10px;
+	color: #fff;
+	
+}
+
+
+/*div.model_div_on:after{
+	content:url(../img/三角.png);
+	position:absolute;
+	right: 0px;
+	top:10px;
+	 
+	}*/
+	/*/*模型编辑器页面下模型类别子级菜单和公式名称子级菜单公共样式*/
+	.model_common_box{
+		width: 100%;
+		height:41px;
+		display: table;
+		color: #9fa8c0;
+	}
+	/*左侧树导航区域样式结束*/
+	/*主要展示区域样式开始*/
+	.main{
+		/*width:1366px;*/
+		/*height:713px;*/
+		width: 100%;
+		height: calc(100% - 82px);
+		background-color:#fff;
+        margin-top: 10px;
+        padding-top: 10px;
+		
+	}
+	/*底部logo*/
+	.bottom_logo{
+		width: 180px;
+		height: 47px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: #f8f9fb;
+		line-height: 47px;
+		text-align: center;
+	}
+	/*类别样式*/
+	.company_nature_box{
+		width: 60px;
+		/*height: 666px;*/
+		height: calc(100% - 47px);
+
+		position: relative;										
+	}
+    .company_nature_box i{
+    font-size:22px;
+}
+	.company_nature{
+		width: 60px;
+		height: 38px;
+		background: #f8f9fb;
+		display: table;
+		border-bottom: 1px solid #edf0f5;
+		font-size: 14px;
+		color: #454545;
+
+		
+		
+	}
+	.company_nature_children{
+		width: 100%;
+	height: 60px;
+	font-size: 10px;
+	color: #8d98b5;
+    text-align: center;
+    line-height: 52px;
+    cursor: pointer;
+	}
+.nature_on{
+	color: #fff;
+	background: #466080;
+}
+div.nature_on:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 10px solid white;
+    border-bottom: 8px solid transparent;
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 0;
+}
+
+
+
+	.company_nature_children img{
+		text-align: center;
+	}
+	.company_nature_children p{
+
+		position: absolute;
+		font-size: 10px;
+		width: 100%;
+		/*text-align: center;*/
+		bottom: -14px;
+	}
+	/*模型名称样式*/
+	.model_name_box{
+		width: 120px;
+		/*height: 666px;*/
+		height: calc(100% - 47px);
+		/*border-right: 1px solid #edf0f5;*/
+		border-left: 1px solid #edf0f5;
+		font-size: 14px;
+         overflow-y: auto;
+	}
+	.model_name_box .model_category{
+		width: 100%;
+		height: 38px;
+		font-size: 14px;
+		color: #454545;
+		display: table;
+	}
+	.addBtn{
+		width: 100%;
+		height: 38px;
+		line-height: 38px;
+		text-align: center;
+		color: #8d98b5;
+		background: #F8F9FB;
+		font-size: 12px;
+	}
+	.main_right{
+		/*width: 1066px;*/
+		width: calc(100% - 300px);
+		height: 100%;
+		background: #edf0f5;
+		overflow: hidden;
+		border-left: 1px solid #edf0f5;
+	}
+	.mian_right_top{
+		width: 100%;
+		height: 38px;
+        background-color:#f8f9fb;
+		
+	}
+	.model_edit_btn{
+		height: 38px;
+		line-height: 38px;
+		text-align: center;
+		color: #9fa8c0;
+		/*width: 7.4%;*/
+		width: 10%;
+		border-right: 1px solid #fff;
+	}
+	.model_edit_btn img{
+		z-index:1000;
+		margin-top: -5px;
+	}
+	.one{
+		color: #fff;
+        background-color:#466080;
+	}
+	.mian_right_expression_box{
+		width: 100%;
+		height: calc((100% - 38px)*0.3);
+		background: #fff;
+		/*background:red;*/
+		/*display: -webkit-flex; 
+		display: flex;
+		justify-content:  space-around;
+		align-items:center;*/
+		
+	}
+	.mian_right_expression{
+		width:80%;
+		height: 77.3%;
+		/*background: olive;*/
+		margin-left: 2.6%;
+		 margin-top: 2%;
+	 float:left;
+	}
+	.mian_right_expression_text{
+		height: 52%;
+		width: 7%;
+		/*background: yellow;*/
+		display: table;
+		font-weight: bold;
+		color:#8d98b5 ;
+		font-size: 14px;
+		
+	}
+	.mian_right_expression_show{
+		height: 100%;
+		width: 93%;
+		border: 2px solid #f8f9fb;
+		overflow-y: auto;
+		font-size: 14px;
+	}
+    .mian_right_expression_show > textarea{
+	display: block;
+	margin: 0px;
+	width: calc(100% - 15px);
+	height:calc(100% - 6px);
+	padding-left: 10px;
+	/*color: #c57575;*/
+	font-weight: bold;
+	border: none;
+	resize: none;
+	color: #54abef;
+	font-family: "微软雅黑";
+	outline:none;
+	background-color: transparent;
+}
+.mian_right_expression_show  .textareaON{
+	color: #c57575;
+}
+textarea:focus{
+	outline:none;
+	border: none;
+	
+}
+	.key_btn_box{
+		width: 8%;
+	height: 64%;
+	/*display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #c0c5d5;*/
+	margin-top: 2%;
+    margin-left: 1%;
+  
+    float:left;
+
+	}
+	.key_btn_box div{
+		width: 100%;
+	height: 35px;
+	/*background: red;*/
+	display: table;
+    border-radius: 5px;
+    border: 1px solid #8D98B5;
+    -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+    margin-top:4%;
+}
+.key_btn_box .submit{
+	margin-top: 0;
+    border: none;
+    background: #d8d8d8;
+
+}
+	.key_btn_box .submiton{
+		background:#c16868;
+		color: #fff;
+		border: none;
+	}
+	.calculator{
+		width: 100%;
+		height: calc((100% - 38px)*0.7);
+		background: #fff;
+		border-top: 1px solid #edf0f5;
+		font-size: 13px;
+	}
+	.calculator_top{
+		width: 100%;
+		height: 9.72%;
+		border-bottom: 1px solid #edf0f5;
+		display: table;
+		font-size: 13px;
+		color: #a3a3a3;
+        background-color:#f8f9fb;
+		/*font-weight: bold;*/
+		
+	}
+	.calculator_common{
+		width: 100%;
+		height:41px;
+		display: table;
+		color: #9fa8c0;
+		
+		
+	}
+
+
+	.calculator_name_box{
+		/*width: 185px;*/
+		width: calc((100% - 280px)*0.30);
+		height: 100%;
+        overflow-y: auto;
+	}
+	.variable_box{
+		/*width: 380px;*/
+		width: calc((100% - 280px)*0.50);
+		height: 100%;
+		background: #fff;
+		border-left: 1px solid #edf0f5;
+		border-right: 1px solid #edf0f5;
+       
+	}
+	.variable_name_box{
+		/*width: 185px;*/
+		width: 50%;
+		/*height: 366px;*/
+		height: 100%;
+		border-right: 1px solid #edf0f5;
+         overflow-y: auto;
+	}
+	.variable_box .top{
+		color: #a3a3a3;
+		border-bottom: 1px solid #edf0f5;
+        background-color:transparent;
+	}
+	.value_box{
+		/*width: 190px;*/
+		width: 50%;
+		height: 100%;
+		overflow-y: auto;
+	}
+	.value_box .top{
+		height: 40px;
+	}
+	.value_on span {
+		color: #c16868;
+	}
+	.logic_box{
+		/*width: 168px;*/
+		width: calc((100% - 280px)*0.2);
+		height: 100%;
+		border-right: 1px solid #edf0f5;
+	}
+	.constant_box{
+		width: 280px;
+		height: 100%;
+		
+	}
+	.constant_box .constant{
+		width: 100%;
+		height: 9.72%;
+		border-bottom: 1px solid #edf0f5;
+		display: table;
+		font-size: 13px;
+		color: #a3a3a3;
+        background-color:#f8f9fb;
+		/*font-weight: bolder;*/
+		
+		
+	}
+	.constant_right{
+		width: 66.26%;
+		height: 9.72%;
+		border-bottom: 1px solid #edf0f5;
+	}
+	.keyboard_box{
+		width: 100%;
+		height: 90.28%;
+		color: #c0c5d5;
+	}
+	.keyboard_box .key{
+    width: 25%;
+    height: 69px;
+    display: table;
+    cursor: pointer;
+    border-bottom: 1px solid #f6f6f6;
+    border-right: 1px solid #f6f6f6;
+    border-radius: 6px;
+		
+	}
+	
+
+		/*退格以及清除按钮的样式*/
+		.btn_on{
+			color: #fff;
+			background: rgb(84,171,239);
+			border: 1px solid rgb(84,171,239);
+		}
+
+
+		/*点击编辑按钮后确认是模型还是标签的box*/
+		.edit_btn_box{
+			width:180px;
+			height:115px;
+			/*background:#FFF;*/
+			position:absolute;
+			top:0;
+			left:0;
+			display:none;
+		}
+		.edit_btn_box_childern_1{
+			width:100%;
+			height:20%;
+			/*background:;*/
+		}
+		.edit_btn_box_childern_1 div{
+			width:0;
+			height:0;
+			border:10px solid transparent;
+			border-bottom:13px solid #fff;
+			z-index:10001;
+            position: absolute;
+            top: 1px;
+            left: 8px;
+
+		}
+		.edit_btn_box_childern_2, .edit_btn_box_childern_3{
+			width:100%;
+			height:40%;
+			display:table;
+			background:#FFF;
+            border: 1px solid #f8f9fb;
+		}
+		div.edit_btn_box_childern_2:hover{
+			color: #c16868;
+		}
+		div.edit_btn_box_childern_3:hover{
+			color: #c16868;
+		}
+		.edit_btn_box_childern_2{
+			/*border-bottom:1px solid #f8f9fb;*/
+            border: 1px solid #f8f9fb;
+		}
+
+
+		/*弹出框样式*/
+		.alert_box{
+			width: 300px;
+			/*height: 20%;*/
+			height: 173px;
+			position:absolute;
+			top:20%;
+			left:41%;
+			/*border: 1px solid #C1C1C1;*/
+			box-shadow: 0 0 10px #777;
+			background:#fff;
+			display:none;
+			/*border-radius: 8px;*/
+		} 
+		.alert_box_name{
+			width: 100%;
+			height: 40px;
+			/*display: table;*/
+			text-align: center;
+			line-height: 40px;
+			background: #f8f9fb;
+			position: relative;
+			font-size: 14px;
+			color: #454545;
+
+		}
+		.alert_box_name img{
+			position: relative;
+			top: 2px;
+
+		}
+		.alert_box_name .alert_close{
+			position: absolute;
+			right: 2%;
+			line-height:2.2;
+			display: none;
+			cursor:pointer;
+		}
+
+		.alert_table{
+			width: 100%;
+			height: 50%;
+			font-size: 12px;
+			color: #454545;
+		}
+		.alert_table_text{
+			width: 36%;
+			text-align: right;
+
+		}
+		.alert_input{
+			width: 70%;
+			font-size: 12px;
+			color: #454545;
+		}
+		.alert_input input{
+			width: 80%;
+			height: 30%;
+			font-size: 12px;
+			color: #454545;
+		}
+		.alert_box_btn_box{
+			width: 100%;
+			height: 40px;
+
+			display: -webkit-flex; /* Safari */
+			display: flex;
+			justify-content: space-around;
+			align-items:center;
+			position: absolute;
+			bottom: -2px;
+		}
+		.alert_box_btn_box .alert_btn{
+			width:150px;
+			height: 36px;
+
+			border-top: 1px solid #e3e3e3;
+			/*border-radius: 8px;*/
+			/*border-radius: 5px;*/
+			display: table;
+			/*margin-right: 1.58%;*/
+			color: #8d98b5;
+			cursor:pointer;
+
+		}
+
+        .banxin .main .fontColor{
+            color:#fff;
+            background:#71859d;
+        }
+
+
+		.look{
+			color: #c16868;
+		}
+
